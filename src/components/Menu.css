@@ -1,0 +1,54 @@
+ion-menu {
+  width: auto;
+  --ion-background-color: #000000; /* Fondo degradado rojo claro */
+    
+  animation: slideIn 0.5s; /* Animación de desplazamiento */
+}
+
+
+#inbox-list,
+#labels-list {
+  padding-top: 20px;
+}
+
+#inbox-list ion-header,
+#labels-list ion-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  padding: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* Estilos de los ítems del menú */
+ion-item {
+  --ripple-color: #3d40ff; /* Color del efecto de onda al hacer clic */
+}
+
+ion-item.selected {
+  --ion-background-color: #3d40ff;
+  color: #ebe3e3;
+}
+
+ion-item ion-label {
+  color: #faf7f7;
+}
+
+ion-item ion-icon {
+  color: #ebe3e3;
+}
+
+/* Animación de desplazamiento */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
